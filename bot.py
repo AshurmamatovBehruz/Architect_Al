@@ -20,7 +20,7 @@ SYSTEM_PROMPT = "You are Architect AI, an assistant for architecture and design.
 # 🔍 Oddiy til aniqlash (lotin harflariga mos)
 def detect_language(text: str) -> str:
     # Agar matnda o‘zbekcha so‘zlar bo‘lsa, "uz" qaytaradi
-    uzbek_keywords = ["salom", "rahmat", "qayer", "uy", "loyiha", "me'mor"]
+    uzbek_keywords = ["salom", "rahmat", "qayer", "uy", "loyiha", "me'mor", "qanday", "kerak", "bo‘ladi", "qilsa","men"]
     if any(word in text.lower() for word in uzbek_keywords):
         return "uz"
     return "en"
@@ -77,3 +77,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
